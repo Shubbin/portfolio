@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #3498db; /* Blue background */
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #2980b9; /* Darker blue navbar */
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2980b9; /* Darker blue footer */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px; /* Rounded corners for images */
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Olasubomi Alade Makinde </h1>
+        <img src="/images/king.JPG" width="200px" height="200px" alt="Olasubomi 1">
+        <img src="/images/men.JPG" width="200px" height="200px" alt="Olasubomi 2">
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="/images/SHUBBIN.JPG" width="200px" height="200px" alt="Olasubomi 3">
+        <img src="/images/shubby.JPG" width="200px" height="200px" alt="Olasubomi 2">
+        <p>Welcome to my online space! a dedicated student and aspiring front-end developer based in Lagos, Nigeria.
+            <br>
+            I hold a degree in Computer Science from Lagos State Polytechnic. Explore my portfolio, discover my <br>
+            skills, and get to know more about my journey in the world of web development.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>
+            <ol>
+                <li>profiency with ms word and excel and powerpoint</li>
+                <li>Good communication skills</li>
+                <li>Problem solver</li>
+                <li>leadership</li>
+            </ol>
+        </p>
+    </section>
+
+    <section id="Work_experience">
+        <h2>Work experience</h2>
+        <h3>Jamb Register</h3>
+       <p> Farydhak Concepts</p>
+       <p>December 2022 to march 2023</p>
+       <p>my job was to regiter jamb candidates</p>
+    </section>
+
+    <section id="services">
+        <h2>Education</h2>
+        <h3>OND in computer science</h3>
+        <p>Lagos state Polytechnic </p>
+        <p>January 2021 to december 2023</p>
+        
+    </section>
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <img src="/images/gip.JPG" width="200px" height="200px" alt="Olasubomi 5">
+        <p>Address: 19 AD federal lowcost estate, Ikorodu, Lagos state, Nigeria.</p>
+        <p>Email: shubbintech@gmail.com</p>
+        <p>Phone: 08135285257</p>
+    </footer>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        })
+    </script>
+
+</body>
+</html>
